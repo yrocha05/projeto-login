@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+:root {
+    --cor1: #C9AE91;
+    --cor2: #937960;
+    --cor3: #765B3D;
+    --cor4: #845A32;
+    --cor5: #1E1007;
+}
+
+
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body,html{
+    background-color: #845A32;
+    height: 100vh;
+    width: 100vw;
+}
+
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+section#login{
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.651);
+
+    transition: width .4s, height .4s;
+    transition-timing-function: ease;
+
+}
+
+section#login > div#imagem-e{
+    background:#937960 url(../imagens/museu.jpg);
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: block;
+}
+
+section#login > div#formulario{
+    display: block;
+    padding: 10px;
+}
